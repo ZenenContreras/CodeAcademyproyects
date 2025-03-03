@@ -186,9 +186,9 @@ button:hover{
 }
 
 .chair-image{
-    max-width: 400px;
+    max-width: 300px;
     padding: 10px;
-    max-height: 400px;
+    max-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,6 +196,12 @@ button:hover{
     border-radius: 10px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.chair-image:hover{
+    transform: scale(1.03);
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 .chair-image img{
