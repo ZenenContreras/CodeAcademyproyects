@@ -57,6 +57,12 @@ button:hover{
     height:50px;
 }
 
+.header .logo:hover{
+    transform: translateY(-2px);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
 .header .nav ul{
     display: flex;
     gap: 10px;
@@ -70,8 +76,8 @@ button:hover{
 .header .nav li:hover{
     background-color: #1f5292;
     border-radius: 5px;
-    transition: 0.3s;
-    
+    transition: all 0.5s;
+    transform: translateY(-3px);
 }
 
 .header .Contact{
@@ -90,7 +96,7 @@ button:hover{
     height:50px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 730px) {
     .header .nav{
         display:none;
     }
