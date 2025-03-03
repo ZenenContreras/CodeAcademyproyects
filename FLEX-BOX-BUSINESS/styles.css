@@ -24,7 +24,8 @@ button{
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Sigmar', cursive;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
 }
 
 button:hover{
@@ -43,10 +44,11 @@ button:hover{
     padding:0px 10px;
     background-color: #333;
     color: #fff;
-    width:100%;
+    width: 100%;
     z-index: 100;
     height: 4rem;
-    font-family: 'Sigmar', cursive;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
 }
 
 .header .logo{
@@ -115,3 +117,33 @@ button:hover{
 }
 
 /* hero section */
+.hero{
+    padding: 70px 20px;
+    background-image: url(chair-home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+.hero-content{
+    height: 40vh;
+    min-width: 40vh;
+    max-width: 35%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
