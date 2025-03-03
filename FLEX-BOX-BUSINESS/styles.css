@@ -156,6 +156,16 @@ button:hover{
     }
 }
 
+@media (max-width: 400px) {
+    .hero{
+        padding-top: 120px;
+    }
+
+    .hero-content{
+        height: 80vh;
+    }
+}
+
 /* chairs section */
 
 .chairs{
@@ -231,4 +241,55 @@ button:hover{
     align-items: center;
 }
 
+.about-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+}
 
+.about-team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-team-member{
+    display: flex;
+    max-width: 500px;
+    height: 90px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about-team-member p{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.about-team img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* footer section */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
