@@ -1,3 +1,8 @@
+:root{
+    --primary-color: #1f5292;
+    --secondary-color: #225ca3;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -13,7 +18,7 @@ ul{
 }
 
 button{
-    background-color: #1f5292;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -23,7 +28,7 @@ button{
 }
 
 button:hover{
-    background-color: #225ca3;
+    background-color: var(--secondary-color);
     border-radius: 5px;
     transition: 0.3s;
 }
@@ -74,7 +79,7 @@ button:hover{
 }
 
 .header .nav li:hover{
-    background-color: #1f5292;
+    background-color: var(--primary-color);
     border-radius: 5px;
     transition: all 0.5s;
     transform: translateY(-3px);
