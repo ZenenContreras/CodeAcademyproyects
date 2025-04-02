@@ -3,28 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Portfolio/assets/code.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <title>Portfolio Website</title>
 </head>
 <body>
 
     <nav>
-        <div id="logo">
-            <img src="" alt="Logo de code">
-            <h1>Zenen Contreras</h1>
+        <div id="logo" class="logo">
+            <h1 class="gradiente">Zenen Contreras</</h1>
         </div>
 
         <ul>
-            <li><a href="#hero"></a></li>
-            <li><a href="#proyects"></a></li>
-            <li><a href="#technologies"></a></li>
-            <li><a href="#contact"></a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#proyects">Proyects</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <img src="/Portfolio/assets/github.svg" alt="Logo de github">
         </ul>
+
+
 
     </nav>
 
-    <section id="hero">
+    <section id="hero" class="home">
+
+        <div class="grid1">
+            <h2 class="gradiente">Hello, I'm</h2>
+            <h1 id="typewriter"><span id="text"></span><span class="cursor">|</span></h1>
+    
+            <p>from <span> Colombia </span>specialized in creating modern and responsive web experiences. Passionate about clean code and user-centered design.</p>
+
+            <div class="tecnologies">
+                <img src="/Portfolio/assets/javascript.svg" alt="Javascript logo">
+                <img src="/Portfolio/assets/react.svg" alt="React logo">
+                <img src="/Portfolio/assets/html.svg" alt="html logo">
+                <img src="/Portfolio/assets/css.svg" alt="">
+                <img src="/Portfolio/assets/git.svg" alt="git logo">
+            </div>
+        </div>
+        <div>
+
+        </div>
+
+
+        
 
     </section>
 
@@ -38,8 +64,8 @@
     </section id='contact'>
 
     <footer>
-        <h3> © 2025 creado por Zenen Contreras. Todos los derechos reservados. </h3>
+        <h4> © 2025 creado por Zenen Contreras. Todos los derechos reservados. </h4>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
