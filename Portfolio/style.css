@@ -88,24 +88,44 @@ ul a{
 }
 
 
-ul a:hover{
+ul li:hover{
     background: linear-gradient(90deg, rgba(253,117,29,1) 0%, rgba(252,236,69,0.9542410714285714) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    transform: scale(1.5);
+    
 }
 
 ul img{
     width: 30px;
     height: 30px;
     cursor: pointer;
-    transition: all 0.4s;
+    transition: 0.4s ease-in;
 }
 
 ul img:hover{
     transform: scale(1.1);
 }
 
+.responsive-menu{
+  display: none;
+}
+
+.responsive-menu img{
+  width: 40px;
+  height: 30px;
+}
+
+
+@media (width <= 900px){
+  .nav{
+    display: none;
+  }
+
+  .responsive-menu{
+    display: flex;
+  }
+
+}
 
 /* Home */
 
@@ -114,6 +134,40 @@ ul img:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+}
+
+@media (width <= 900px) {
+  
+  .home{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .grid2{
+    order:1;
+  }
+
+  .grid2 img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .grid1{
+    order: 2;
+  }
+
+  .grid1 h2{
+    font-size: 1em;
+  }
+
+  .grid1 h1{
+    font-size: 1em;
+  }
+
+
+    
+  
+
 }
 
 
@@ -128,11 +182,13 @@ ul img:hover{
 .grid1 h2{
     font-size: 2em;
     padding: 10px;
+    text-align: center;
 }
 
 .grid1 h1{
     font-size: 4em;
     padding: 10px;
+    text-align: center;
 }
 
 .cursor {
@@ -316,14 +372,12 @@ ul img:hover{
 /* Contac*/
 
 .contact{
-    padding: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 30px;
+    align-content: center;
 }
 
  h3{
-    padding: 20px;
+    padding-bottom: 40px;
     color: #ff7d00;
     font-size: 1em;
 }
@@ -342,6 +396,12 @@ ul img:hover{
     gap: 20px;
     box-sizing: border-box;
     border-radius: 16px;
+  }
+
+  @media (width <= 900px) {
+      .form-container{
+        transform: scale(0.8);
+      }
   }
   
   .form-container button:active {
@@ -429,8 +489,6 @@ ul img:hover{
   }
   
   
-  
-  
 
 /* Footer */
 
@@ -440,4 +498,5 @@ footer{
     justify-content: center;
     align-items: center;
     color: #a2a9b5;
+    text-align: center;
 }
