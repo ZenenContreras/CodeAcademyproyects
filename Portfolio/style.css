@@ -32,12 +32,15 @@ h1{
 }
 
 button{
-    color: #a2a9b5;
-    padding: 5px;
-    border-radius: 10px;
-
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
 }
-
 
 /* Navbar */
 
@@ -52,6 +55,19 @@ nav {
     background-color: #0D1321;
 }
 
+.nav.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background-color: #0D1321;
+  padding: 20px;
+  gap: 15px;
+  border-radius: 10px;
+  z-index: 2;
+  border: 1px solid white;
+}
 
 nav .logo{
     display: flex;
@@ -106,8 +122,14 @@ ul img:hover{
     transform: scale(1.1);
 }
 
-.responsive-menu{
+nav button{
   display: none;
+  background-color: #0D1321;
+  box-shadow: none;
+}
+
+.responsive-menu:hover{
+  cursor: pointer;
 }
 
 .responsive-menu img{
@@ -115,8 +137,7 @@ ul img:hover{
   height: 30px;
 }
 
-
-@media (width <= 900px){
+@media only screen and (width <= 900px){
   .nav{
     display: none;
   }
@@ -136,37 +157,28 @@ ul img:hover{
     grid-template-rows: 1fr;
 }
 
-@media (width <= 900px) {
+@media only screen and (width <= 900px) {
   
   .home{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-top: 100px;
   }
 
   .grid2{
     order:1;
   }
 
-  .grid2 img{
-    width: 200px;
-    height: 200px;
-  }
-
   .grid1{
     order: 2;
   }
 
-  .grid1 h2{
-    font-size: 1em;
+}
+
+@media only screen and (width <= 530px) {
+  .home{
+    padding-top: 50px;
   }
-
-  .grid1 h1{
-    font-size: 1em;
-  }
-
-
-    
-  
 
 }
 
@@ -181,7 +193,6 @@ ul img:hover{
 
 .grid1 h2{
     font-size: 2em;
-    padding: 10px;
     text-align: center;
 }
 
@@ -202,12 +213,18 @@ ul img:hover{
     }
 }
 
-.grid1{
-    padding: 10px;
-}
-
 .grid1 p{
     text-align: center;
+}
+
+@media only screen and (width <= 900px){
+  .grid1 h2{
+    font-size: 1.25em;
+  }
+
+  .grid1 h1{
+    font-size: 1.5em;
+  }
 }
   
 .grid1 p span{
@@ -232,8 +249,13 @@ ul img:hover{
     padding: 20px;
     display: flex;
     gap: 20px;
-    align-items: center;
-    justify-content: center;
+}
+
+@media only screen and (width <= 530px){
+  .buttons{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .cssbuttons-io-button {
@@ -369,9 +391,17 @@ ul img:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media only screen and (width <=900px){
+  .grid2 img{
+    width: 250px;
+    height: 250px;
+  }
+}
+
 /* Contac*/
 
 .contact{
+    display: none;
     padding: 30px;
     align-content: center;
 }
@@ -396,12 +426,6 @@ ul img:hover{
     gap: 20px;
     box-sizing: border-box;
     border-radius: 16px;
-  }
-
-  @media (width <= 900px) {
-      .form-container{
-        transform: scale(0.8);
-      }
   }
   
   .form-container button:active {

@@ -34,4 +34,9 @@ function typeEffect() {
 
 typeEffect(); // Inicia la animación
 
+const menuBtn = document.querySelector('.responsive-menu');
+const navMenu = document.querySelector('.nav');
 
+menuBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
