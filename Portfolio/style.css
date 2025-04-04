@@ -189,6 +189,7 @@ nav button{
     align-items: center;
     flex-direction: column;
     color: #a2a9b5;
+    z-index: 0;
 }
 
 .grid1 h2{
