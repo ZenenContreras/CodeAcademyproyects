@@ -151,7 +151,7 @@ nav button{
 /* Home */
 
 .home{
-    padding: 200px 40px 200px 40px;
+    padding: 200px 40px 100px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -401,11 +401,13 @@ nav button{
 /* Contac*/
 
 .contact{
-    display: none;
-    padding: 30px;
-    align-content: center;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
  h3{
     padding-bottom: 40px;
     color: #ff7d00;
@@ -414,7 +416,7 @@ nav button{
 
 /* From Uiverse.io by gharsh11032000 */ 
 .form-container {
-    width: 600px;
+    width: 500px;
     background: linear-gradient(0deg, rgba(255, 125, 0, 1) 0%, rgba(255, 95, 109, 1) 100%);
     border: 2px solid transparent;
     padding: 32px 24px;
@@ -512,6 +514,12 @@ nav button{
     transform: translate(10px);
   }
   
+  @media only screen and (width <=530px){
+      .form-container{
+        width: 100%;
+        padding: 32px 32px;
+      }
+  }
   
 
 /* Footer */
